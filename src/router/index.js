@@ -4,7 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import Board from '@/components/Board'
 import ContentDetail from '@/components/ContentDetail';
 import Create from '@/components/Create';
-
+import Profile from '@/components/Profile';
 
 Vue.use(Router)
 
@@ -29,6 +29,11 @@ export default new Router({
       path: '/board/free/create/:contentId?',
       name: 'Create',
       component: Create
+    },
+    {
+      path: '/board/profile',
+      name: 'Profile',
+      component: Profile
     }
   ]
 })
